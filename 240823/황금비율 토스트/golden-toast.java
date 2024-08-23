@@ -22,8 +22,10 @@ public class Main {
             }else if (command.equals("R")) {
                 it.next();
             }else if (command.equals("D")) {
-                it.next();
-                it.remove();
+                if (it.hasNext()) {
+                    it.next();
+                    it.remove();
+                }
             }
         }
         for (char c : l) {
